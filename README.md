@@ -1,20 +1,14 @@
 
-<h1 align="center">
-  <a href="#" target="_blank">XcomLibray</a>
-</h1>
+# XcomLibray
+基于Vue的公共组件、模块库
 
-<div align="center">
-
-基于vue的npm包开发模板
-
-</div>
 
 ## XCom
 - XCom = X(无限、未知) + Com(GoCom)
-- 
+
 ## 安装
 ```shell
-npm install xcom -S
+npm install xcom-library
 ```
 
 ## 使用
@@ -42,7 +36,7 @@ Modern browsers and Internet Explorer 10+.
 
 ### 特性
 
-- 开箱即用，直接开始造轮子。
+- 分模块管理，独立组件开发。
 - 使用gulp分模块打包。
 - 使用sass样式预处理器。
 
@@ -88,26 +82,6 @@ npm run serve
 | gulpfile.js      | gulp模块化打包配置文件 |
 
 #### 配置 package.json 文件
-根据实际情况修改以下几个参数：
-```javascript
-{
-    "name": "my-component",
-    "version": "1.0.1",
-    "private": false,
-    "main": "lib/init.js",
-    "style": "lib/index.css",
-    "keywords": [
-        "hg-components",
-        "test"
-    ],
-    "author": {
-        "name": "HG",
-        "email": "376401263@qq.com"
-    },
-    "peerDependencies": {
-        "vue": ">= 2.6.0 < 3"
-    }
-}
 ```
 | 参数        | 说明   | 
 | --------    | :-----  | 
