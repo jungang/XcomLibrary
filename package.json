@@ -1,6 +1,6 @@
 {
   "name": "xcom-library",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "main": "lib/init.js",
   "files": [
@@ -14,7 +14,10 @@
   "keywords": [
     "xcom",
     "library",
-    "jun-components"
+    "components",
+    "vue2",
+    "JavaScript",
+    "npm modules"
   ],
   "peerDependencies": {
     "vue": ">= 2.6.0 < 3"
@@ -68,7 +71,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "description": "## Project setup ``` npm install ```",
-  "license": "ISC",
+  "license": "MIT",
   "directories": {
     "example": "examples"
   },

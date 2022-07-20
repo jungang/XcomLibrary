@@ -122,23 +122,19 @@ Vue.use(MyComponent);
 ```
 
 #### 发布到npm
-> 如果 NPM 全局已经替换成淘宝的镜像源后，登录和发布会失败，这时候可以在命令后面加上 --registry http://registry.npmjs.org 即可
-
-1、到<a href="https://www.npmjs.com/">npm官网</a>注册一个账号
-
-2、登录,在项目根目录下运行
+1、登录,在项目根目录下运行
 ```bash
 npm login
 ```
 > 登录成功后，登录信息会存放于全局，也就是说，下次更新发布组件，不需要再重新登录，可通过 npm whoami 可查看当前登录账号名。
 
-3、发布
+2、发布
 ```bash
 npm publish
 ```
 
 ## Links
-- [github](https://github.com/jungang/XcomLibrary)
+- [XcomLibrary(github)](https://github.com/jungang/XcomLibrary)
 
 ## LICENSE
 [MIT](LICENSE)
