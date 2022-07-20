@@ -1,12 +1,20 @@
 {
   "name": "xcom-library",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "private": false,
   "main": "lib/init.js",
+  "files": [
+    "lib/*",
+    "packages/*",
+    "public/*",
+    "*.js",
+    "*.json"
+  ],
   "style": "lib/index.css",
   "keywords": [
-    "hg-components",
-    "test"
+    "xcom",
+    "library",
+    "jun-components"
   ],
   "peerDependencies": {
     "vue": ">= 2.6.0 < 3"
@@ -23,7 +31,10 @@
     "lint": "vue-cli-service lint",
     "lib:modules": "gulp build",
     "lib:pack": "vue-cli-service build --target lib --name opu --dest lib index.js",
-    "lib": "npm run lib:pack && npm run lib:modules"
+    "lib": "npm run lib:pack && npm run lib:modules",
+    "login": "npm login",
+    "whoami": " npm whoami",
+    "publish": "npm publish"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -55,5 +66,18 @@
     "sass": "^1.26.10",
     "sass-loader": "^9.0.3",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "license": "ISC",
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jungang/XcomLibrary.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jungang/XcomLibrary/issues"
+  },
+  "homepage": "https://github.com/jungang/XcomLibrary"
 }

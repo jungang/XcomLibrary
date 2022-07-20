@@ -29,6 +29,10 @@ gulp.task("build_modules", () => {
     .pipe(gulp.dest("lib"));
 });
 
+gulp.task("copy_vue", () => {
+  return gulp.src("packages/**/*.vue").pipe(gulp.dest("lib"));
+});
+
 gulp.task("copy_ts", () => {
   return gulp.src("packages/**/*.d.ts").pipe(gulp.dest("lib"));
 });
@@ -59,7 +63,7 @@ gulp.task("lib_rename", () => {
 
 gulp.task(
   "build_style",
-  gulp.series("build_modules", "copy_ts", () => {
+  gulp.series("build_modules", "copy_ts", "copy_vue", () => {
     return Promise.all(
       components.map(name => {
         Promise.all([

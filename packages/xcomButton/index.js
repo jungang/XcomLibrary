@@ -1,8 +1,8 @@
-import XcomButton from "./src/button";
+import xcomButton from "./src/button";
 
-/* istanbul ignore next */
-XcomButton.install = function(Vue) {
-  Vue.component(XcomButton.name, XcomButton);
+xcomButton.install = function(Vue) {
+  Vue.component(xcomButton.name, xcomButton);
 };
 
+export const XcomButton = xcomButton;
 export default XcomButton;

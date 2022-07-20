@@ -4,6 +4,7 @@ import XcomButton from "./xcomButton";
 
 // 按需加载的组件
 const components = [HelloWorld, TestComponent, XcomButton];
+// const components = [HelloWorld, TestComponent];
 
 // 默认安装
 function install(Vue) {
